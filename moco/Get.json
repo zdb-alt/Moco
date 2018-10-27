@@ -1,0 +1,34 @@
+[
+  {
+    "description":"get请求",
+    "request":{
+      "uri":"/get123",
+      "method":"get"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+
+      "text":"第一个get请求"
+    }
+
+  },
+  {
+      "description":"get带参数请求",
+      "request":{
+        "uri":"/parame",
+        "method":"get",
+        "queries":{
+          "name":"习近平"
+        }
+                },
+      "response":{
+        "headers":{
+          "Content-Type":"text/html;charset=gbk"
+        },
+        "text":"我胡汉三回来了"
+      }
+
+  }
+]

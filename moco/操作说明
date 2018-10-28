@@ -1,2 +1,6 @@
 java -jar moco-runner-0.11.0-standalone.jar  http -p 8888 -c Startup.json
 java -jar moco-runner-0.11.0-standalone.jar  http -p 8888 -c Get.json
+java -jar moco-runner-0.11.0-standalone.jar  http -p 8899 -c post.json
+java -jar moco-runner-0.11.0-standalone.jar  http -p 8899 -c getCookies.json
+java -jar moco-runner-0.11.0-standalone.jar  http -p 8899 -c postCookies.json
+java -jar moco-runner-0.11.0-standalone.jar  http -p 8899 -c Chongdingxiang.json

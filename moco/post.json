@@ -1,0 +1,27 @@
+[
+  {
+    "description": "post带参数请求",
+    "request": {
+      "uri": "/parame",
+      "method": "post"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=UTF-8"
+      },
+      "text": "我胡汉三回来了"
+    },
+    "description": "post带参数",
+    "request": {
+      "uri": "/canshu",
+      "method": "post",
+      "forms": {
+        "name": "张飒",
+        "sex": "男"
+      }
+    },
+    "response": {
+      "text": "带参数返回成功"
+    }
+  }
+]

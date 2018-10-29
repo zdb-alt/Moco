@@ -1,5 +1,23 @@
 [
   {
+    "description":"获取cookies",
+    "request":{
+      "uri":"/getcookies",
+      "method":"get"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=GBK"
+      },
+      "cookies":{
+        "Login":"true",
+        "statues":"1000"
+      },
+      "text":"获取cookies成功"
+    }
+  },
+
+  {
     "description":"get请求",
     "request":{
       "uri":"/get1234",
@@ -10,26 +28,27 @@
       },
     "response":{
       "headers":{
-        "Content-Type":"text/html;charset=gbk"
+        "Content-Type":"text/html;charset=UTF-8"
           },
       "text":"第一个get请求"
     }
+  },
+  {
+    "description":"get带参数请求",
+    "request":{
+      "uri":"/parame",
+      "method":"get",
+      "queries":{
+        "name":"习近平"
+      }
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text":"我胡汉三回来了"
+    }
+
   }
 ]
-//  {
-//    "description":"get带参数请求",
-//    "request":{
-//      "uri":"/parame",
-//      "method":"get",
-//      "queries":{
-//        "name":"习近平"
-//      }
-//    },
-//    "response":{
-//      "headers":{
-//        "Content-Type":"text/html;charset=gbk"
-//      },
-//      "text":"我胡汉三回来了"
-//    }
 
- // }

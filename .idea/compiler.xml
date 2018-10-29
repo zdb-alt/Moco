@@ -19,6 +19,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Moco" target="1.5" />
       <module name="Report" target="1.5" />
       <module name="test1" target="1.5" />
       <module name="test2" target="1.5" />

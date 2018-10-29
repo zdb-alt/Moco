@@ -1,0 +1,35 @@
+[
+  {
+    "description": "post带参数请求",
+    "request": {
+      "uri": "/341-2",
+      "method": "post",
+      "forms": {
+        "page": "1"
+      }
+    },
+    "response": {
+      "json":[
+        {
+          "title": "这腿你能给多少分啊",
+          "id": "5bb302606e36ed6cd64f1731",
+          "img": "https://www.zbjuran.com/uploads/allimg/181002/2-1Q0021314253S.jpg",
+          "ct": "2018-10-02 13:30:08.562",
+          "type": 2
+        },
+        {
+          "title": "团购开始，有组队报名的没",
+          "id": "5bb302606e36ed6cd64f1730",
+          "img": "https://www.zbjuran.com/uploads/allimg/181002/2-1Q002131520a8.jpg",
+          "ct": "2018-10-02 13:30:08.562",
+          "type": 2
+        }
+      ],
+      "status":200
+
+    }
+  }
+
+
+
+]

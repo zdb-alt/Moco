@@ -4,40 +4,22 @@
     "request": {
       "uri": "/postcookies",
       "method": "post",
-      "cookies":{
-        "login":"true"
+      "cookies": {
+        "login": "true"
       },
-      "json":{
-      "name":"zhangdaba",
-        "age":"18"
-}
+      "json": {
+        "name": "zhangdaba",
+        "age": "18"
+      }
     },
     "response": {
-      "status":200,
-      "json":{
-        "zhangdaba":"success",
-        "status":"1"
-      }
-    },
+      "status": 200,
+      "json":
+        [{
+          "zhangdaba": "success",
+          "status": "1"
+        }]
 
-    "description":"json格式添加请求头信息",
-    "request":{
-      "uri":"/headerspost",
-      "method":"post",
-      "headers":{
-        "Content-Type": "application/json"
-      },
-      "json":{
-        "name":"zhangxiao",
-        "sex":"nv"
-      }
-    },
-      "response":{
-        "json":{
-          "zhangxiao":"success",
-          "status":"100"
-        }
     }
-    }
-
+  }
 ]

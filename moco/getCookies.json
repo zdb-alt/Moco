@@ -10,8 +10,7 @@
         "Content-Type":"text/html;charset=GBK"
       },
       "cookies":{
-        "Login":"true",
-        "statues":"1000"
+        "Login":"true"
       },
       "text":"获取cookies成功"
     }
@@ -28,7 +27,7 @@
       },
     "response":{
       "headers":{
-        "Content-Type":"text/html;charset=UTF-8"
+        "Content-Type":"text/html;charset=gbk"
           },
       "text":"第一个get请求"
     }

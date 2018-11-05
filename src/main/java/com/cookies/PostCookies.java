@@ -33,16 +33,16 @@ public class PostCookies {
     }
     @Test
     public  void cookies() throws IOException {
-        String result1;
+        String result;
         //从配置文件拼接url
-        String url=  bundle.getString("getcookie.url");
+        String url=  bundle.getString("testpostcookies");
         String testurl=this.url+url;
         //测试逻辑代码书写
         HttpGet get =new HttpGet(testurl);
         DefaultHttpClient client=new DefaultHttpClient();
         HttpResponse response =client.execute(get);
-        result1= EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result1);
+        result= EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println(result);
         //获取cookies信息
         this.store=client.getCookieStore();
         List<Cookie> cookieList=store.getCookies();
@@ -53,11 +53,11 @@ public class PostCookies {
         }
 
     }
-    @Test(dependsOnMethods ={"cookies"})
+    @Test(dependsOnMethods = {"cookies"})
     public  void postcookies() throws IOException {
-        String url=bundle.getString("testpostcookies");
+        String uri=bundle.getString("testpostcookies");
         //拼接post地址
-        String testurl=this.url+url;
+        String testurl=this.url+uri;
         //声明一个Client对象，来进行方法的执行
         DefaultHttpClient client=new DefaultHttpClient();
         //声明一个方法，post方法
@@ -69,13 +69,13 @@ public class PostCookies {
         param.put("age","18");
         //设置请求头
         post.setHeader("Content-Type","application/json");
-        //将参数信息添加到参数中
+        //将参数信息添加到方法中
         StringEntity entity=new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
         //声明一个对象来进行响应结果的存储
         String result;
         //设置cookie信息
-        client.setCookieStore(store);
+        client.setCookieStore(this.store);
         //执行post方法
         HttpResponse response=client.execute(post);
         //获取响应结果

@@ -1,5 +1,33 @@
 [
   {
+    "description":"获取cookies",
+    "request":{
+      "uri":"/getcookies",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "Login":"true"
+      },
+      "text":"获取cookies成功"
+    }
+  },
+
+  {
+    "description":"get请求",
+    "request":{
+      "uri":"/get1234",
+      "method":"get",
+      "cookies":{
+        "Login":"true"
+      }
+    },
+    "response":{
+      "text":"第一个携带cookies的get请求"
+    }
+  },
+
+  {
     "description": "post带参数",
     "request": {
       "uri": "/postcookies",
@@ -15,11 +43,12 @@
     "response": {
       "status": 200,
       "json":
-        [{
+        {
           "zhangdaba": "success",
           "status": "1"
-        }]
+        }
 
     }
   }
+
 ]

@@ -22,12 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="spring boot" />
+        <module name="SPRING" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Moco" target="1.5" />
       <module name="Report" target="1.5" />
+      <module name="spring" target="1.5" />
+      <module name="SPRING" target="1.5" />
       <module name="spring boot" target="1.5" />
       <module name="test1" target="1.5" />
       <module name="test2" target="1.5" />

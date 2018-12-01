@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
  * Created by XULE on 2018/11/13.
  */
 @SpringBootApplication
-@ComponentScan("com.spring")
+@ComponentScan("com")
 
 public class Application {
     public static void main(String[] args) {

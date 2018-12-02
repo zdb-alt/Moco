@@ -21,9 +21,9 @@ public class Post {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ApiOperation(value = "登录接口，获取cookie信息成功",httpMethod = "POST")
     public  String login(HttpServletResponse response,
-                         @RequestParam(value = "name",required = true) String name,
+                         @RequestParam(value = "username",required = true) String username,
                          @RequestParam(value = "password",required = true) String password){
-        if (name.equals("zdb")&password.equals("123")){
+        if (username.equals("zdb")&password.equals("123")){
             cookie=new Cookie("login","true");
             response.addCookie(cookie);
             return "恭喜你登录成功";
@@ -39,10 +39,12 @@ public class Post {
         //验证cookie是否正确
         for (Cookie c:cookies){
             if(c.getName().equals("login")&& c.getValue().equals("true")
-                    && u.getName()=="zdb"&& u.getPassword().equals("123")){
+                    && u.getUsername().equals("zdb")&& u.getPassword().equals("123")){
                 user=new User();
                 user.setNN("lisi");
                 user.setYy("12333");
+                user.setUsername("张三");
+                user.setPassword("123");
                 return user.toString();
             }
         }

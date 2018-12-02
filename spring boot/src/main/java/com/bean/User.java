@@ -7,42 +7,42 @@ import lombok.Data;
  */
 @Data
 public class User {
-    private String name;
+
+    private  String username;
     private   String password;
     private  String NN;
     private  String yy;
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setPassword(String password) {
+
         this.password = password;
     }
+    public void setUsername(String username) {
 
-
-    public String getName() {
-        return name;
+        this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
+//    public String getUsername() {
+//        return username;
+//    }
+
+//    public String getPassword() {
+//        return password;
+//    }
 
     public void setNN(String NN) {
         this.NN = NN;
     }
 
-    public String getNN() {
-        return NN;
-    }
+//    public String getNN() {
+//        return NN;
+//    }
 
     public void setYy(String yy) {
         this.yy = yy;
     }
 
-    public String getYy() {
-        return yy;
-    }
+//    public String getYy() {
+//        return yy;
+//    }
 }
